@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+  <b><a class="panel-heading left-side" href="{{repo.html_url}}"> {{repo.html_url}}</a></b>
+    </div>
+  <div class="panel-body">
+  <div class="row col-md-12">
+  <div class="col-md-3">
+ <b class="color-blue">Login: </b>{{repo.owner.login}} <br />
+  <img ng-src="{{repo.owner.avatar_url}}"/>
+  </div>
+  <div class="col-md-9">
+   <b class="color-blue">Language: </b>  {{repo.language}}</br>
+<b class="color-blue">Description: </b>{{repo.description}}</br>
+<b class="color-blue">Contributors: </b><ul ng-repeat="contr in contributors">
+<li>{{contr.login}}</li>
+</ul>
+</div>
+</div>
+  </div>
+</div>
+<a ui-sref="allRepositories"><div class="btn btn-default">Back</div></a>

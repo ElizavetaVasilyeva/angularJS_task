@@ -1,0 +1,36 @@
+<div class="row">
+<form class="form col-md-3" role="form">
+	<div class="form-group">
+    <label for="size">Maximum size</label>
+		<input ng-model='size' type="text" class="form-control" id="size">
+	</div>
+ <div class="form-group">
+    <label for="forks">Minimum forks</label>
+    <input ng-model='forks' type="text" class="form-control" id="forks">
+  </div>
+  <div class="form-group">
+    <label for="stars">Minimum stars</label>
+    <input ng-model='stars' type="text" class="form-control" id="stars">
+  </div> 
+ <button ng-click="query()" type="submit" class="btn btn-default">Search</button>
+ <label ng-show="loaded" >Loading...</label>
+</form>
+<form class="form form-inline col-md-12" style="margin-top: 2%;" role="form">
+ <div class="form-group">
+    <label for="limit">Count</label>
+    <input ng-model='limit' type="text" class="form-control" id="limit">
+  </div>
+ <div class="form-group">
+    <label for="sortparam">Sort by</label>
+    <input ng-model='sortparam' type="text" class="form-control" id="sortparam">
+  </div>
+  <div class="form-group">
+    <label for="filt">Filter</label>
+    <input ng-model='filt' type="text" class="form-control" id="filt">
+  </div>
+  <select class="form-control" ng-model='sor'>
+<option value=''>asc</option>
+<option value='reverse'>decs</option>
+</select>
+</form>
+</div>

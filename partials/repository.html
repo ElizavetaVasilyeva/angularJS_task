@@ -1,0 +1,8 @@
+<search-form></search-form>
+<br />
+<div class="container">
+<div ng-repeat="repo in repositories | filter:filt |orderBy:sortparam:sor | limitTo:limit">
+<my-reposit source="repo"></my-reposit>
+</div>
+</div>
+

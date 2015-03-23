@@ -1,0 +1,30 @@
+.row{
+	min-width: 100%;
+}
+
+#form-magrin{
+	margin-top: 2% !important;
+}
+
+.panel{
+	margin-top: 2%;
+}
+
+.panel img{
+	max-width: 60%;
+}
+
+ .panel-heading .span{
+   width: 200px;
+   margin-right: 0;
+  }
+
+.color-blue{
+	color: blue;
+}
+
+.details-right{
+	position: absolute;
+	margin-left: 74em;
+	margin-top: -1.3em;
+  }

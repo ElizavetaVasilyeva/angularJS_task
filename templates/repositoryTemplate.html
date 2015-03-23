@@ -1,0 +1,26 @@
+<div class="container">
+<div ng-repeat="repo in repositories | filter:filt |orderBy:sortparam:sor | limitTo:limit" class="panel panel-default">
+	<div class="panel-heading">
+		<div class="span1">
+			<b>
+				<a class="panel-heading left-text" href="{{repo.html_url}}"> {{repo.html_url}}</a>
+			</b>
+		</div>
+		<div class="details-right">
+			<a class="panel-heading right-side" ui-sref="viewRepo({id:repo.id})">Details</a>
+		</div>
+	</div>
+  <div class="panel-body">
+  <div class="row col-md-12">
+  <div class="col-md-3">
+ <b class="color-blue">Login: </b>{{repo.owner.login}} <br />
+  <img ng-src="{{repo.owner.avatar_url}}" class="img-circle"/>
+  </div>
+  <div class="col-md-9">
+   <b class="color-blue">Language: </b>  {{repo.language}}</br>
+<b class="color-blue">Description: </b>{{repo.description}}</br>
+</div>
+</div>
+  </div>
+</div>
+</div>
